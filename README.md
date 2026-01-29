@@ -1,20 +1,19 @@
 ## My Portfolio Website
-Description: Modern Portfolio with **Dark Blue** theme, built with **React** and **Go**
+Description: Modern Portfolio with **Dark Blue** theme, built with **Next**
 
 ## Information
-- Demo: [here](https://vincentdev37-portfolio.vercel.app/)
+- Demo: [here](https://my-pw-phi.vercel.app/)
 
 ## Features
-- High Performance: Since backend uses Go, the cold start is finished instantly in Serverless environment
+- Integrated Environment: Since this application is built in Next, client and API are integrated
 - Responsive Design: Support both mobile and desktop view
 - Lightweight and simple: Easy to setup and maintain code
 - Type safe: Full TypeScript in Frontend
 - Dynamic Project Update: Auto retrieve repository from Github API
-- Modern UI: Dark Blue Theme
+- Modern UI?UX: Dark Blue Theme
 
 ## Tech Stack
-- Frontend: React, TypeScript, Vite, Bootstrap
-- Backend: Go (Golang)
+- Frontend: Next (React + TypeScript) + TailwindCSS
 - Deployment: Vercel
 - Package Manager: PNPM / NPM
 
@@ -27,8 +26,8 @@ Description: Modern Portfolio with **Dark Blue** theme, built with **React** and
 - Vercel CLI (optional)
 
 ### Setup
-1. Clone this repository by running `git clone https://github.com/VYDev37/MyPort.git` in terminal or just use VSCode integrated Git
-2. Change the part you would like to change (For repositories retriever, refer to `HandleGetRepos` function and edit the `githubUsername` part, for frontend part, most things are put in `frontend/app.config.ts`)
+1. Clone this repository by running `git clone https://github.com/VYDev37/MyPW.git` in terminal or just use VSCode integrated Git
+2. Change the part you would like to change in `app/app.config.ts`
 3. Create new repository
 4. Connect to the repository with `git remote add origin <repo_url>` (or just use integrated Git in VSCode)
 5. Add the changed file manually with `git add .` (or just use integrated Git in VSCode)
