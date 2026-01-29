@@ -30,8 +30,8 @@ Description: Modern Portfolio with **Dark Blue** theme, built with **Next**
 2. Change the part you would like to change in `app/app.config.ts`
 3. Create new repository
 4. Connect to the repository with `git remote add origin <repo_url>` (or just use integrated Git in VSCode)
-5. Add the changed file manually with `git add .` (or just use integrated Git in VSCode)
-6. Publish the repo and push the change via Git with `git push -u origin main` (or just use integrated Git in VSCode)
+5. Add the changed file manually with `git add .` (or just use integrated Git in VSCode) and commit with your message
+6. Publish the repo and push the change via Git with `git push -u origin master` (or just use integrated Git in VSCode)
 7. Open [Vercel](https://vercel.com)
 8. Import Project, then choose the repository you uploaded just now
 9. Set the environment variable keys and values, required keys and example value can be seen on `example.env`
