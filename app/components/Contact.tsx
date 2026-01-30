@@ -2,7 +2,7 @@ import appConfig from "../../app.config";
 
 export default function Contact() {
     return (
-        <section id="contact" className="animate-fade-up flex flex-col items-center justify-center bg-slate-950 text-center py-10 px-4 min-h-[40vh]">
+        <section id="contact" className="flex flex-col items-center justify-center bg-slate-950 text-center py-10 px-4 min-h-[40vh]">
             <h1 className="font-bold text-white text-3xl mb-3">Find me</h1>
             <p className="text-gray-200 text-2xl mt-3">Let's get connected!</p>
 

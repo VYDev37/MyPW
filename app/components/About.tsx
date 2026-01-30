@@ -2,7 +2,7 @@ import appConfig from "@/app.config";
 
 export default function About() {
     return (
-        <section id="about" className="animate-fade-up flex flex-col items-center justify-center bg-gray-950 text-center py-20 px-4 min-h-[80vh]">
+        <section id="about" className="flex flex-col items-center justify-center bg-gray-950 text-center py-20 px-4 min-h-[80vh]">
             <div className="container mx-12 px-6 md:px-12 lg:px-24">
                 <div className="text-center mb-16">
                     <h1 className="font-bold text-4xl mb-3 text-white">About me</h1>
@@ -18,7 +18,7 @@ export default function About() {
                     </div>
                     <div className="md:col-span-5 space-y-4">
                         {appConfig.journey.cards.map(journey => (
-                            <div key={journey.id} className="p-6 mb-3 rounded-xl border border-gray-900 bg-slate-900 text-white text-start">
+                            <div key={journey.id} className="p-6 mb-3 transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-xl hover:border-sky-500/50 rounded-xl border border-gray-900 bg-slate-900 text-white text-start">
                                 <p className="font-bold text-blue-400 mb-2">{journey.title}</p>
                                 <p className="text-sm text-gray-400">{journey.desc}</p>
                             </div>

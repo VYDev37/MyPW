@@ -5,7 +5,7 @@ export default function Works() {
     const { projects, loading } = useProjects();
 
     return (
-        <section id="works" className="animate-fade-up flex flex-col items-center justify-center text-center py-20 px-4 min-h-[80vh] bg-gray-950 ">
+        <section id="works" className="flex flex-col items-center justify-center text-center py-20 px-4 min-h-[80vh] bg-gray-950 ">
             <h1 className="font-bold mb-3 text-white text-3xl">My Works</h1>
             <p className="text-gray-200 text-2xl mt-3">This section contains my published works on GitHub.</p>
 

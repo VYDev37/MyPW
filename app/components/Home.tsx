@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function HomePage() {
     return (
-        <section id="home" className="animate-fade-up flex flex-col items-center justify-center bg-slate-950 text-center py-20 px-4 min-h-[80vh]">
+        <section id="home" className="flex flex-col items-center justify-center bg-slate-950 text-center py-20 px-4 min-h-[80vh]">
             <div className="max-w-4xl">
                 <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-4 tracking-tight">Welcome to my page!</h1>
                 <h2 className="text-2xl md:text-3xl font-semibold text-gray-300">

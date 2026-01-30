@@ -6,7 +6,7 @@ import { NextResponse } from "next/server";
 export async function GET() {
     const githubToken = process.env.GITHUB_TOKEN;
 
-    const response = await fetch(`https://api.github.com/users/${appConfig.githubUsername}/repos?per_page=${appConfig.repoLimit}`, {
+    const response = await fetch(`https://api.github.com/users/${appConfig.githubUsername}/repos?per_page=50`, {
         headers: {
             Authorization: `Bearer ${githubToken}`,
             "Accept": "application/vnd.github+json"
@@ -18,7 +18,7 @@ export async function GET() {
         return NextResponse.json({ error: "Failed to fetch repos" }, { status: response.status });
 
     const repo: Repository[] = await response.json();
-    const filteredRepo = repo.filter(x => !x.fork)
+    const filteredRepo = repo.filter(x => !x.fork).slice(0, appConfig.displayRepoLimit); // limit 
 
     return NextResponse.json({ works: filteredRepo });
 }

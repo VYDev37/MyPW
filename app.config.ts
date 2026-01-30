@@ -15,7 +15,7 @@ const appConfig = {
             { id: 3, title: "Other Skills Journey", desc: "Currently learning server-side development with Bun.js and TypeScript, and Go as the current progress for next level of backend and Next.js for BFF." }
         ],
         description: [
-            "I began to learn Programming about 5 years ago and Website Development recently, completely self-taught from online resources and lots of tests. I started with C++ and Python as I was curious about Game and Discord Bot Development, but then switched to website development since I also curious on how websites and apps integrated.",
+            "I began to learn Programming in 2021 and Website Development recently, completely self-taught from online resources and lots of tests. I started with C++ and Python as I needed it for Competitive Programming, I was also curious about Game and Discord Bot Development, but then switched to website development since I also curious on how websites and apps integrated.",
             "I'm still learning every day, but I've got used with TypeScript and used it for both frontend and backend things. I love the problem-solving aspect of coding and the satisfaction of realizing an idea to something real in the browser."
         ]
     },
@@ -23,7 +23,7 @@ const appConfig = {
     // 'Skills' page
     skills: {
         cards: [
-            { id: 1, icon: "cpp-icon text-py-blue size-6", title: "C/C++", desc: "My first programming language learned. I used C++ for Growtopia Private Server development, competitive programming, game development test, and other learning." },
+            { id: 1, icon: "cpp-icon text-py-blue", title: "C/C++", desc: "My first programming language learned. I used C++ for Growtopia Private Server development, competitive programming, game development test, and other learning." },
             { id: 2, icon: "fab fa-python text-py-blue", title: "Python", desc: "I used to use Python for discord bot development purpose, but now I use it for college projects." },
             { id: 3, icon: "fab fa-js text-yellow-400", title: "JavaScript & TypeScript", desc: "I used to use JavaScript to develop discord bot, but then switched to the development of client-side and server-side of website." },
             { id: 4, icon: "fab fa-html5 text-orange-600", title: "HTML5", desc: "The first language I used to learn website for the first time as it is the core of website development." },
@@ -31,10 +31,12 @@ const appConfig = {
             { id: 6, icon: "fab fa-react text-py-blue", title: "React", desc: "Currently the library that I used to build my frontend SPA (Single Page Application) projects and this portofolio." },
             { id: 7, icon: "fab fa-bootstrap text-blue-500", title: "Bootstrap", desc: "A CSS Framework that I learned and found to be helpful in boosting my website development progress." },
             { id: 8, icon: "fas fa-database text-yellow-400", title: "Database", desc: "For database, I have used MongoDB and PostgreSQL. However, I decided to fully use PostgreSQL for the simplicity." },
-            { id: 9, icon: "express-icon bg-yellow-400 size-6", title: "Express.js", desc: "A high-performance, minimal Node.js framework utilized for developing secure and scalable backend APIs. Experienced in custom middleware development and efficient server-side routing." },
+            { id: 9, icon: "express-icon bg-yellow-400", title: "Express.js", desc: "A high-performance, minimal Node.js framework utilized for developing secure and scalable backend APIs. Experienced in custom middleware development and efficient server-side routing." },
             { id: 10, icon: "fab fa-git text-yellow-400", title: "Git", desc: "I usually distribute my code to Github with this tool." },
-            { id: 11, icon: "vscode-icon size-6", title: "Visual Studio Code", desc: "IDE (Integrated Development Environment) of my projects." },
+            { id: 11, icon: "vscode-icon", title: "Visual Studio Code", desc: "IDE (Integrated Development Environment) of my projects." },
             { id: 12, icon: "fab fa-golang text-py-blue", title: "Go", desc: "Currently learning Go to leverage its high performance and concurrency features. I intend to use it as the main backend language for my upcoming projects." },
+            { id: 13, icon: "vercel-icon", title: "Vercel", desc: "Utilized as a high-performance hosting and deployment platform, leveraging its seamless integration with Next.js and global edge network capabilities." },
+            { id: 14, icon: "next-icon bg-gray-200", title: "Next.js", desc: "Currently exploring Next.js to enhance my React applications with Server-Side Rendering (SSR) and optimized routing for better performance and SEO." }
         ]
     },
 
@@ -49,7 +51,7 @@ const appConfig = {
 
     // 'My Works' settings
     githubUsername: "VYDev37",
-    repoLimit: 50
+    displayRepoLimit: 9
 }
 
 export default appConfig;
