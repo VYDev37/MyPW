@@ -14,7 +14,7 @@ export default function HomePage() {
                 </div>
             </div>
             <div className="col-12 col-md-12 flex justify-center mt-5">
-                <Link className="button text-white rounded-xl border-0 outline-0 text-decoration-none bg-sky-400 py-2 px-4 fs-5 my-4 mx-3 font-bold opacity-100 transition duration-300 hover:opacity-75 lg:text-xl md:text-xs" 
+                <Link className="button text-white rounded-xl border-0 outline-0 text-decoration-none bg-sky-400 py-2 px-4 fs-5 my-4 mx-3 font-bold opacity-100 transition duration-300 hover:opacity-75 lg:text-xl md:text-xs"
                     href="/api/download-cv" target="_blank" rel="noopener noreferrer"><i className="fas fa-download"></i>Download CV</Link>
                 <Link className="button text-white bg-transparent border-solid border-2 rounded-xl outline-0 border-sky-400 text-decoration-none py-2 px-4 fs-5 my-4 mx-3 font-bold transition duration-300 opacity-100 hover:opacity-75 lg:text-xl md:text-xs"
                     href="#about">About me</Link>

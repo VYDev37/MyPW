@@ -13,7 +13,7 @@ Description: Modern Portfolio with **Dark Blue** theme, built with **Next**
 - Modern UI/UX: Dark Blue Theme
 
 ## Tech Stack
-- Frontend: Next (React + TypeScript) + TailwindCSS
+- Frontend: Next.js (React + TypeScript) + TailwindCSS
 - Deployment: Vercel
 - Package Manager: PNPM / NPM
 

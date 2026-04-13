@@ -1,7 +1,7 @@
 const appConfig = {
     // Home page
     ownerName: "Vincent",
-    ownerDescription: "I am a full-stack developer who usually uses TypeScript for both Frontend and Backend Development. Currently learning Next.js and Go.",
+    ownerDescription: "I am a full-stack developer working with TypeScript, and currently diving deeper into Next.js and Go for more optimized systems.",
 
     // 'Contact' page
     linkedinUrl: "https://www.linkedin.com/in/vincent-yu-4048b7363/",
@@ -10,33 +10,127 @@ const appConfig = {
     role: "A self-taught full-stack developer",
     journey: {
         cards: [
-            { id: 1, title: "Frontend Journey", desc: "Started with HTML5 and CSS3, then moved to React and Boostrap and then exploring new frameworks and libraries. Currently learning Next for its BFF (Backend for Frontend) feature and TailwindCSS." },
-            { id: 2, title: "Backend Journey", desc: "My backend journey began with Express.js (Node.js), focusing on traditional APIs. I then migrated to the Hono framework (API server) powered by the Bun.js runtime for superior speed and Type Safety with TypeScript. Currently expanding expertise with Go for high-performance microservices." },
-            { id: 3, title: "Other Skills Journey", desc: "Currently learning server-side development with Bun.js and TypeScript, and Go as the current progress for next level of backend and Next.js for BFF." }
+            {
+                id: 1,
+                title: "Frontend Evolution",
+                desc: "Building on my curiosity for the web, I progressed from mastering HTML/CSS foundations to architecting responsive interfaces with React. I am currently exploring Next.js and Tailwind CSS to better understand optimized rendering and utility-first design."
+            },
+            {
+                id: 2,
+                title: "Backend Exploration",
+                desc: "My server-side journey began with Express.js, focusing on traditional REST APIs. Seeking better performance and type-safety, I transitioned to Hono and Bun.js, and I'm now challenging myself with Go to understand high-performance system architecture."
+            },
+            {
+                id: 3,
+                title: "Problem Solving Roots",
+                desc: "Derived from my background in C++ and Python for Competitive Programming, I bridge the gap between algorithmic logic and web development. I focus on applying an analytical mindset to mastering new runtimes, databases, and deployment workflows."
+            }
         ],
         description: [
-            "I began to learn Programming in 2021 and Website Development recently, completely self-taught from online resources and lots of tests. I started with C++ and Python as I needed it for Competitive Programming, I was also curious about Game and Discord Bot Development, but then switched to website development since I also curious on how websites and apps integrated.",
-            "I'm still learning every day, but I've got used with TypeScript and used it for both frontend and backend things. I love the problem-solving aspect of coding and the satisfaction of realizing an idea to something real in the browser."
+            "I started my programming journey in 2021 with C++ and Python for Competitive Programming. Being self-taught, I've always been curious about how things work—from Discord bots to full-scale websites—which eventually led me to focus on web development.",
+            "After building foundations with React, I moved to Next.js to explore more optimized and server-side solutions. Now, I'm further challenging myself by learning Go (Golang) to build efficient, structured backend systems. I love the process of learning every day and the satisfaction of turning code into a functional tool in the browser."
         ]
     },
 
     // 'Skills' page
     skills: {
         cards: [
-            { id: 1, icon: "cpp-icon text-py-blue", title: "C/C++", desc: "My first programming language learned. I used C++ for Growtopia Private Server development, competitive programming, game development test, and other learning." },
-            { id: 2, icon: "fab fa-python text-py-blue", title: "Python", desc: "I used to use Python for discord bot development purpose, but now I use it for college projects." },
-            { id: 3, icon: "fab fa-js text-yellow-400", title: "JavaScript & TypeScript", desc: "I used to use JavaScript to develop discord bot, but then switched to the development of client-side and server-side of website." },
-            { id: 4, icon: "fab fa-html5 text-orange-600", title: "HTML5", desc: "The first language I used to learn website for the first time as it is the core of website development." },
-            { id: 5, icon: "fab fa-css text-py-blue", title: "CSS3", desc: "I used this to design my HTML page of course, this is also the core of website development." },
-            { id: 6, icon: "fab fa-react text-py-blue", title: "React", desc: "Currently the library that I used to build my frontend SPA (Single Page Application) projects and this portofolio." },
-            { id: 7, icon: "fab fa-bootstrap text-blue-500", title: "Bootstrap", desc: "A CSS Framework that I learned and found to be helpful in boosting my website development progress." },
-            { id: 8, icon: "fas fa-database text-yellow-400", title: "Database", desc: "For database, I have used MongoDB and PostgreSQL. However, I decided to fully use PostgreSQL for the simplicity." },
-            { id: 9, icon: "express-icon bg-yellow-400", title: "Express.js", desc: "A high-performance, minimal Node.js framework utilized for developing secure and scalable backend APIs. Experienced in custom middleware development and efficient server-side routing." },
-            { id: 10, icon: "fab fa-git text-yellow-400", title: "Git", desc: "I usually distribute my code to Github with this tool." },
-            { id: 11, icon: "vscode-icon", title: "Visual Studio Code", desc: "IDE (Integrated Development Environment) of my projects." },
-            { id: 12, icon: "fab fa-golang text-py-blue", title: "Go", desc: "Currently learning Go to leverage its high performance and concurrency features. I intend to use it as the main backend language for my upcoming projects." },
-            { id: 13, icon: "vercel-icon", title: "Vercel", desc: "Utilized as a high-performance hosting and deployment platform, leveraging its seamless integration with Next.js and global edge network capabilities." },
-            { id: 14, icon: "next-icon bg-gray-200", title: "Next.js", desc: "Currently exploring Next.js to enhance my React applications with Server-Side Rendering (SSR) and optimized routing for better performance and SEO." }
+            {
+                id: 1,
+                icon: "cpp-icon text-py-blue",
+                title: "C/C++",
+                desc: "My foundational gateway into programming. I use it to explore algorithmic challenges, competitive programming, and the core principles of memory management."
+            },
+            {
+                id: 2,
+                icon: "fab fa-python text-py-blue",
+                title: "Python",
+                desc: "Evolved from a tool for bot automation into a versatile language for academic projects and exploring basic data processing in my college journey."
+            },
+            {
+                id: 3,
+                icon: "fab fa-html5 text-orange-600",
+                title: "HTML5",
+                desc: "The essential backbone of my web projects, focused on writing semantic and accessible structures for a better user experience."
+            },
+            {
+                id: 4,
+                icon: "fab fa-css text-py-blue",
+                title: "CSS3",
+                desc: "Exploring modern styling techniques, responsive layouts, and smooth transitions to create visually engaging and user-friendly interfaces."
+            },
+            {
+                id: 5,
+                icon: "fab fa-bootstrap text-blue-500",
+                title: "Bootstrap",
+                desc: "A reliable CSS framework I utilize for rapid prototyping and ensuring cross-browser consistency with proven UI components."
+            },
+            {
+                id: 6,
+                icon: "tailwind-icon w-6 h-6",
+                title: "TailwindCSS",
+                desc: "Implementing a utility-first approach to build highly customized and performant designs directly within the markup."
+            },
+            {
+                id: 7,
+                icon: "fab fa-js text-yellow-400",
+                title: "JavaScript & TypeScript",
+                desc: "Progressed from simple scripting to building scalable web applications, currently focusing on type-safety and modern development patterns."
+            },
+            {
+                id: 8,
+                icon: "fab fa-react text-py-blue",
+                title: "React",
+                desc: "My primary library for building component-based Single Page Applications (SPA), emphasizing reusability and efficient state management."
+            },
+            {
+                id: 9,
+                icon: "fas fa-database text-yellow-400",
+                title: "Database",
+                desc: "Experienced with MongoDB and PostgreSQL, currently deepening my understanding of relational schemas for better data integrity."
+            },
+            {
+                id: 10,
+                icon: "express-icon bg-yellow-400",
+                title: "Express.js",
+                desc: "Developing RESTful APIs with a focus on clean routing, secure middleware implementation, and efficient server-side logic."
+            },
+            {
+                id: 11,
+                icon: "fab fa-git text-yellow-400",
+                title: "Git",
+                desc: "Utilizing version control as a standard practice for maintaining organized codebases and facilitating seamless collaboration."
+            },
+            {
+                id: 12,
+                icon: "vscode-icon",
+                title: "Visual Studio Code",
+                desc: "My preferred integrated development environment, customized with a tailored workflow to boost coding efficiency."
+            },
+            {
+                id: 13,
+                icon: "fab fa-golang text-py-blue",
+                title: "Go",
+                desc: "Currently exploring Go's powerful concurrency model and performance capabilities for building robust backend services."
+            },
+            {
+                id: 14,
+                icon: "next-icon bg-gray-200",
+                title: "Next.js",
+                desc: "Enhancing my React expertise by learning Server-Side Rendering (SSR) and optimized file-based routing for better performance."
+            },
+            {
+                id: 15,
+                icon: "supabase-icon",
+                title: "Supabase",
+                desc: "Leveraging this Backend-as-a-Service (BaaS) to integrate real-time databases and authentication into my projects efficiently."
+            },
+            {
+                id: 16,
+                icon: "vercel-icon",
+                title: "Vercel",
+                desc: "My go-to platform for automated deployment and high-performance hosting, ensuring fast delivery through a global edge network."
+            }
         ]
     },
 
