@@ -10,7 +10,7 @@ Description: Modern Portfolio with **Dark Blue** theme, built with **Next**
 - Lightweight and simple: Easy to setup and maintain code
 - Type safe: Full TypeScript in Frontend
 - Dynamic Project Update: Auto retrieve repository from Github API
-- Modern UI?UX: Dark Blue Theme
+- Modern UI/UX: Dark Blue Theme
 
 ## Tech Stack
 - Frontend: Next (React + TypeScript) + TailwindCSS
