@@ -5,4 +5,5 @@ export interface Repository {
 	language: string;
 	homepage: string;
 	fork: boolean;
+	topics: string[];
 }
