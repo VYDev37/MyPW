@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import type { Repository } from "@/app/types";
+import type { Repository } from "@/types/repo";
 
 const useProjects = () => {
     const [projects, setProjects] = useState<Repository[]>([]);

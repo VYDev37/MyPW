@@ -1,5 +1,5 @@
 import appConfig from "@/app.config";
-import type { Repository } from "@/app/types";
+import type { Repository } from "@/types/repo";
 
 import { NextResponse } from "next/server";
 
@@ -29,7 +29,7 @@ export async function GET() {
             return Number(b.name.toLowerCase() === user) - Number(a.name.toLowerCase() === user)
                 || Number(!!b.homepage) - Number(!!a.homepage) || b.topics.length - a.topics.length;
         })
-        .slice(0, appConfig.displayRepoLimit);
+        .slice(0, appConfig.displayRepoLimit - 1);
 
     return NextResponse.json({ works: filteredRepo });
 }

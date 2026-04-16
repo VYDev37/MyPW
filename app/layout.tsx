@@ -18,15 +18,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Vincent's Page",
+  title: "Vincent Yu - Fullstack Web Developer",
   description: "My portfolio website page.",
 };
 
-export default function RootLayout({ children }: Readonly<{children: React.ReactNode;}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {children}
+    <html lang="en" className="scroll-smooth bg-slate-950">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-950 text-slate-300 selection:bg-sky-500/30 selection:text-sky-200`}>
+        <main className="overflow-x-hidden w-full flex flex-col items-center">
+          {children}
+        </main>
       </body>
     </html>
   );
