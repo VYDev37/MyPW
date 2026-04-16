@@ -20,8 +20,10 @@ A modern, responsive, and highly customizable personal portfolio website. It fea
 - **Language:** TypeScript
 - **Styling:** TailwindCSS
 - **Animations:** Framer Motion
-- **Icons:** FontAwesome
+- **Icons:** FontAwesome & other custom SVGs
 - **Package Manager:** pnpm
+
+*Note: CSS Classes for Custom SVGs could be found on google or you may use my tools [here](https://svg-to-css-kohl.vercel.app).*
 
 ## 📂 Project Structure
 
