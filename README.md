@@ -1,39 +1,68 @@
-## My Portfolio Website
-Description: Modern Portfolio with **Dark Blue** theme, built with **Next**
+# MyPW - Modern Portfolio Website
 
-## Information
-- Demo: [here](https://my-pw-phi.vercel.app/)
+A modern, responsive, and highly customizable personal portfolio website. It features a sleek dark blue theme, smooth animations, and dynamic content fetching.
 
-## Features
-- Integrated Environment: Since this application is built in Next, client and API are integrated
-- Responsive Design: Support both mobile and desktop view
-- Lightweight and simple: Easy to setup and maintain code
-- Type safe: Full TypeScript in Frontend
-- Dynamic Project Update: Auto retrieve repository from Github API
-- Modern UI/UX: Dark Blue Theme
+*Live Demo: [vincentdev.site](https://vincentdev.site/)*
 
-## Tech Stack
-- Frontend: Next.js (React + TypeScript) + TailwindCSS
-- Deployment: Vercel
-- Package Manager: PNPM / NPM
+## 🚀 Features
 
-## Getting started
-### Requirements
-- Github account
-- Git (connected with Github account)
-- VSCode (or any code editor)
-- pnpm / npm (optional) -> if you would like to build locally first before pushing it to cloud
-- Vercel CLI (optional)
+- **Modern UI/UX:** Beautiful dark blue theme with seamless layout transitions.
+- **Type-Safe:** Fully written in TypeScript for predictable and maintainable code.
+- **Dynamic Projects:** Automatically fetches and displays your top repositories directly from the GitHub API.
+- **Centralized Configuration:** The `app.config.ts` file allows you to effortlessly update personal info, skills, journey milestones, and links without touching UI components.
+- **Responsive Design:** Optimized fluid layouts that look great on both mobile and desktop viewing environments.
+- **Integrated Environment:** Client and API seamlessly combined using Next.js App Router for optimal rendering.
 
-### Setup
-1. Clone this repository by running `git clone https://github.com/VYDev37/MyPW.git` in terminal or just use VSCode integrated Git
-2. Change the part you would like to change in `app/app.config.ts`
-3. Create new repository
-4. Connect to the repository with `git remote add origin <repo_url>` (or just use integrated Git in VSCode)
-5. Add the changed file manually with `git add .` (or just use integrated Git in VSCode) and commit with your message
-6. Publish the repo and push the change via Git with `git push -u origin master` (or just use integrated Git in VSCode)
-7. Open [Vercel](https://vercel.com)
-8. Import Project, then choose the repository you uploaded just now
-9. Set the environment variable keys and values, required keys and example value can be seen on `example.env`
-10. Deploy
-11. Done
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Library:** React 19
+- **Language:** TypeScript
+- **Styling:** TailwindCSS
+- **Animations:** Framer Motion
+- **Icons:** FontAwesome
+- **Package Manager:** pnpm
+
+## 📂 Project Structure
+
+```text
+mypw-next/
+├── app/               # Next.js App Router configurations and core pages
+├── components/        # Reusable React components (NavBar, Skills, Home)
+│   └── animations/    # Custom components for Framer Motion transitions
+├── hooks/             # Custom React hooks tailored for the application
+├── public/            # Static assets and resources
+├── types/             # Custom TypeScript definitions for type-safety
+├── app.config.ts      # Main centralized project configuration file
+├── package.json       # Project dependencies and script definitions
+└── example.env        # Template for local environment variables
+```
+
+## ⚙️ Local Development Setup
+
+Follow these exact steps to set up and run the project locally:
+
+1. **Setup `.env.local` by copying `example.env`:**
+   ```bash
+   cp example.env .env.local
+   ```
+   *(Ensure you fill in any required environment variables to enable external integrations).*
+
+2. **Install dependencies using `pnpm install`:**
+   ```bash
+   pnpm install
+   ```
+
+3. **Start the development server with `pnpm dev`:**
+   ```bash
+   pnpm dev
+   ```
+
+4. **Test the application at `localhost:3000`:**
+   Open [http://localhost:3000](http://localhost:3000) in your web browser.
+
+## 📦 Customization & Deployment
+
+To make it your own, open `app.config.ts` and modify your name, descriptions, skillset, navigation links, and GitHub username (`githubUsername`) used for fetching your repository data.
+
+When you're ready to share it with the world, the easiest way to deploy is via the [Vercel Platform](https://vercel.com/new). Import your GitHub repository, configure your environment variables based on `.env.local`, and deploy.
