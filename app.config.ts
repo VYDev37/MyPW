@@ -109,6 +109,10 @@ const appConfig = {
                     {
                         icon: "vercel-icon",
                         title: "Vercel"
+                    },
+                    {
+                        icon: "hono-icon w-6 h-6 inline-block bg-no-repeat bg-center",
+                        title: "Hono"
                     }
                 ]
             },
@@ -145,12 +149,12 @@ const appConfig = {
                         title: "MongoDB"
                     },
                     {
-                        icon: "hono-icon w-6 h-6 inline-block bg-no-repeat bg-center",
-                        title: "Hono"
-                    },
-                    {
                         icon: "express-icon bg-yellow-400",
                         title: "Express.js"
+                    },
+                    {
+                        icon: "mysql-icon inline-block bg-white bg-no-repeat bg-center",
+                        title: "MySQL"
                     }
                 ]
             }
