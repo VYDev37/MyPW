@@ -9,12 +9,16 @@ export default function HomePage() {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-sky-500/10 via-slate-950 to-slate-950 -z-10"></div>
             <AnimateIn>
                 <div className="max-w-3xl z-10">
-                    <h1 className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-white to-slate-500 mb-6 tracking-tight">
-                        Welcome to my page.
+                    <h1 className="flex flex-col">
+                        <span className="text-5xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-white to-slate-500 mb-6 tracking-tight">
+                            Welcome to my page.
+                        </span>
+
+                        <span className="text-2xl md:text-3xl font-medium text-slate-300 mb-8">
+                            Hi, I'm <span className="text-sky-400 font-semibold">{appConfig.ownerName}</span>.
+                            <span className="sr-only"> {appConfig.ownerRole}</span>
+                        </span>
                     </h1>
-                    <h2 className="text-2xl md:text-3xl font-medium text-slate-300 mb-8">
-                        Hi, I'm <span className="text-sky-400 font-semibold">{appConfig.ownerName}</span>.
-                    </h2>
 
                     <p className="text-lg md:text-xl text-slate-400 leading-relaxed max-w-2xl mx-auto mb-12 font-light">
                         {appConfig.ownerDescription}

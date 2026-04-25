@@ -1,13 +1,21 @@
+const ownerName = "Vincent Yu";
+const ownerRole = "Full-stack Developer";
+
 const appConfig = {
+    // Layout settings
+    baseSite: "https://vincentdev.site",
+    webTitle: `${ownerName} | ${ownerRole}`,
+
     // Home page
-    ownerName: "Vincent",
+    ownerName: ownerName,
+    ownerRole: ownerRole,
     ownerDescription: "I am a full-stack developer working with TypeScript, and currently diving deeper into Next.js and Go for more optimized systems.",
 
     // 'Contact' page
     linkedinUrl: "https://www.linkedin.com/in/vincent-yu-4048b7363/",
 
     // 'About' page
-    role: "A self-taught full-stack developer",
+    personalRole: "A self-taught full-stack developer",
     journey: {
         cards: [
             {

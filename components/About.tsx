@@ -8,7 +8,7 @@ export default function About() {
                 <AnimateIn>
                     <div className="text-center mb-12 lg:mb-20">
                         <h2 className="font-bold text-3xl md:text-4xl mb-3 text-white tracking-tight">About me</h2>
-                        <p className="text-sky-400 text-lg md:text-xl font-medium">{appConfig.role}</p>
+                        <p className="text-sky-400 text-lg md:text-xl font-medium">{appConfig.personalRole}</p>
                     </div>
                 </AnimateIn>
 
