@@ -27,7 +27,7 @@ export async function GET() {
         }))
         .sort((a: Repository, b: Repository) => {
             return Number(b.name.toLowerCase() === user) - Number(a.name.toLowerCase() === user)
-                || Number(!!b.homepage) - Number(!!a.homepage) || b.topics.length - a.topics.length;
+                || Number(!!b.homepage) - Number(!!a.homepage) || b.stargazers_count - a.stargazers_count || b.topics.length - a.topics.length;
         })
         .slice(0, appConfig.displayRepoLimit - 1);
 
