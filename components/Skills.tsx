@@ -1,6 +1,6 @@
 import appConfig from "@/app.config";
 import { AnimateIn, StaggerContainer, StaggerItem } from "@/components/animations";
-import { SkillInfo } from "@/types/skill";
+import { type SkillInfo } from "@/schemas/skills.schema";
 
 const SkillCard = ({ skill }: { skill: SkillInfo }) => (
     <div className="group flex flex-col h-full p-5 sm:p-8 rounded-2xl border border-slate-800 bg-slate-900/40 transition-all duration-300 hover:-translate-y-1 active:scale-[0.98] hover:border-sky-500/30 hover:shadow-[0_0_30px_-10px_rgba(56,189,248,0.1)]">

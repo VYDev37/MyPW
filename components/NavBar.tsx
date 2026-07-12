@@ -6,7 +6,13 @@ import appConfig from '@/app.config';
 
 export default function NavBar() {
     const [opened, setOpened] = useState<boolean>(false);
-    const navLinks = appConfig.navLinks;
+    const navLinks = [
+        { label: "Home", ref: "#home" },
+        { label: "About", ref: "#about" },
+        { label: "Skills", ref: "#skills" },
+        { label: "Works", ref: "#works" },
+        { label: "Contact", ref: "#contact" }
+    ];
 
     return (
         <header className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 md:px-8 pointer-events-none">

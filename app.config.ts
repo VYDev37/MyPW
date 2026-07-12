@@ -67,28 +67,61 @@ const appConfig = {
                 ]
             },
             {
-                title: "Tools & Ecosystem",
+                title: "Active Backend Stack",
                 display: "badge-primary",
                 items: [
                     {
-                        icon: "fab fa-react text-py-blue",
-                        title: "React"
+                        icon: "fiber-icon w-6 h-6 inline-block bg-white bg-no-repeat bg-center",
+                        title: "Go Fiber",
+                        desc: "Actively building high-performance REST APIs with Fiber's fast routing and middleware capabilities."
+                    },
+                    {
+                        icon: "gorm-icon w-6 h-6 inline-block bg-contain bg-no-repeat bg-center",
+                        title: "GORM",
+                        desc: "Actively using GORM with PostgreSQL for seamless ORM operations, complex queries, and auto-migrations."
                     },
                     {
                         icon: "postgresql-icon w-6 h-6 inline-block bg-contain bg-no-repeat bg-center",
                         title: "PostgreSQL"
                     },
                     {
+                        icon: "supabase-icon",
+                        title: "Supabase"
+                    }
+                ]
+            },
+            {
+                title: "Infrastructure & Deployment",
+                display: "badge-primary",
+                items: [
+                    {
+                        icon: "vercel-icon",
+                        title: "Vercel",
+                        desc: "Automated deployments via Git integration for frontend apps."
+                    },
+                    {
+                        icon: "fab fa-docker",
+                        title: "Docker",
+                        desc: "Comfortable with containerization basics: writing Dockerfiles, managing containers, and using Docker Compose for local development."
+                    },
+                    {
+                        icon: "fas fa-c",
+                        title: "Coolify",
+                        desc: "Hands-on experience deploying full-stack apps on VPS with automatic SSL and CI/CD pipelines."
+                    },
+                    {
+                        icon: "fab fa-git text-yellow-400",
+                        title: "Git & Github"
+                    }
+                ]
+            },
+            {
+                title: "Tools & UI Libraries",
+                display: "badge-secondary",
+                items: [
+                    {
                         icon: "pnpm-icon w-6 h-6",
                         title: "pnpm"
-                    },
-                    {
-                        icon: "fiber-icon w-6 h-6 inline-block bg-white bg-no-repeat bg-center",
-                        title: "Go Fiber"
-                    },
-                    {
-                        icon: "gorm-icon w-6 h-6 inline-block bg-contain bg-no-repeat bg-center",
-                        title: "GORM"
                     },
                     {
                         icon: "shadcn-icon",
@@ -99,35 +132,23 @@ const appConfig = {
                         title: "Drizzle"
                     },
                     {
-                        icon: "fab fa-git text-yellow-400",
-                        title: "Git & Github"
-                    },
-                    {
-                        icon: "vscode-icon",
-                        title: "VSCode"
-                    },
-                    {
                         icon: "fab fa-node",
                         title: "Node.js"
-                    },
-                    {
-                        icon: "supabase-icon",
-                        title: "Supabase"
-                    },
-                    {
-                        icon: "vercel-icon",
-                        title: "Vercel"
-                    },
-                    {
-                        icon: "hono-icon w-6 h-6 inline-block bg-no-repeat bg-center",
-                        title: "Hono"
                     }
                 ]
             },
             {
-                title: "Familiar with / Foundations",
+                title: "Familiar with / Previous Experience",
                 display: "badge-secondary",
                 items: [
+                    {
+                        icon: "express-icon bg-yellow-400",
+                        title: "Express.js"
+                    },
+                    {
+                        icon: "hono-icon w-6 h-6 inline-block bg-no-repeat bg-center",
+                        title: "Hono"
+                    },
                     {
                         icon: "cpp-icon text-py-blue w-8 h-8",
                         title: "C/C++"
@@ -149,34 +170,65 @@ const appConfig = {
                         title: "JavaScript"
                     },
                     {
-                        icon: "fab fa-bootstrap text-blue-500",
-                        title: "Bootstrap"
-                    },
-                    {
                         icon: "mongodb-icon w-6 h-6 inline-block bg-no-repeat bg-center",
                         title: "MongoDB"
-                    },
-                    {
-                        icon: "express-icon bg-yellow-400",
-                        title: "Express.js"
                     },
                     {
                         icon: "mysql-icon inline-block bg-white bg-no-repeat bg-center",
                         title: "MySQL"
                     }
                 ]
+            },
+            {
+                title: "Soft Skills",
+                display: "badge-secondary",
+                items: [
+                    {
+                        icon: "fas fa-people-group pt-[6px] w-8 h-8",
+                        title: "Teamwork"
+                    },
+                    {
+                        icon: "fas fa-lightbulb pt-[6px] w-8 h-8",
+                        title: "Problem Solving"
+                    },
+                    {
+                        icon: "fas fa-sync pt-[6px] w-8 h-8",
+                        title: "Adaptability"
+                    },
+                    {
+                        icon: "fas fa-handshake pt-[6px] w-8 h-8",
+                        title: "Responsibility"
+                    },
+                    {
+                        icon: "fas fa-comments pt-[6px] w-8 h-8",
+                        title: "Communication"
+                    }
+                ]
+            },
+            {
+                title: "Languages",
+                display: "badge-secondary",
+                items: [
+                    {
+                        icon: "fas fa-globe pt-[6px] w-8 h-8",
+                        title: "English"
+                    },
+                    {
+                        icon: "fas fa-language pt-[6px] w-8 h-8",
+                        title: "中文 (Written only)"
+                    },
+                    {
+                        icon: "fas fa-flag pt-[6px] w-8 h-8",
+                        title: "Bahasa Indonesia"
+                    },
+                    {
+                        icon: "fas fa-language pt-[6px] w-8 h-8",
+                        title: "Hokkien"
+                    }
+                ]
             }
         ]
     },
-
-    // Navbar settings
-    navLinks: [
-        { label: "Home", ref: "#home" },
-        { label: "About", ref: "#about" },
-        { label: "Skills", ref: "#skills" },
-        { label: "Works", ref: "#works" },
-        { label: "Contact", ref: "#contact" }
-    ],
 
     // 'My Works' settings
     githubUsername: "VYDev37",
