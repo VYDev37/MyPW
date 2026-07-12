@@ -1,15 +1,21 @@
 import z from "zod";
 
 export const repositorySchema = z.object({
+    id: z.number(),
     name: z.string(),
-    description: z.string(),
-    html_url: z.string(),
-    language: z.string(),
-    homepage: z.string(),
+    full_name: z.string(),
+    html_url: z.string().url(),
+    description: z.string().nullable().optional(),
     fork: z.boolean(),
-    topics: z.array(z.string()),
-    stargazers_count: z.number()
+    homepage: z.string().nullable().optional(),
+    stargazers_count: z.number(),
+    topics: z.array(z.string()).default([]),
+    language: z.string().nullable().optional()
 });
 
 export const repositoriesSchema = repositorySchema.array();
+export const worksSchema = z.object({
+    works: repositoriesSchema
+})
+
 export type Repository = z.infer<typeof repositorySchema>;

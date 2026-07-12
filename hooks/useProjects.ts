@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { repositoriesSchema, type Repository } from "@/schemas/projects.schema";
+import { worksSchema, type Repository } from "@/schemas/projects.schema";
 
 const useProjects = () => {
     const [projects, setProjects] = useState<Repository[]>([]);
@@ -16,11 +16,11 @@ const useProjects = () => {
                 throw new Error("Failed to retrieve data.");
 
             const data = await res.json();
-            const parsed = repositoriesSchema.safeParse(data);
+            const parsed = worksSchema.safeParse(data);
             if (!parsed.success)
                 throw new Error(`Invalid data structure: ${parsed.error.message}.`);
 
-            setProjects(data.works);
+            setProjects(parsed.data.works);
         } catch (err) {
             console.log(err);
             setProjects([]);
