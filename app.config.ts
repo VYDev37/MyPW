@@ -9,31 +9,32 @@ const appConfig = {
     // Home page
     ownerName: ownerName,
     ownerRole: ownerRole,
-    ownerDescription: "I am a full-stack developer working with TypeScript, and currently diving deeper into Next.js and Go for more optimized systems.",
+    ownerDescription: "I build web applications with Next.js and Go, focusing on clean architecture, performance, and shipping things that actually work.",
 
-    // 'Contact' page
+    // Links
     linkedinUrl: "https://www.linkedin.com/in/vincent-yu-4048b7363/",
+    blogUrl: "https://blog.vincentdev.site",
 
     // 'About' page
-    personalRole: "A self-taught full-stack developer",
+    personalRole: "Self-taught full-stack developer",
     journey: {
         cards: [
             {
-                title: "Frontend Evolution",
-                desc: "Building on my curiosity for the web, I progressed from mastering HTML/CSS foundations to architecting responsive interfaces with React. I am currently exploring Next.js and Tailwind CSS to better understand optimized rendering and utility-first design."
+                title: "Frontend",
+                desc: "Started with plain HTML/CSS, picked up React, and now I mainly work with Next.js, shadcn/ui, and Tailwind CSS. I enjoy building interfaces that are fast, responsive, and actually pleasant to use."
             },
             {
-                title: "Backend Exploration",
-                desc: "My server-side journey began with Express.js, focusing on traditional REST APIs. Seeking better performance and type-safety, I transitioned to Hono and Bun.js, and I'm now challenging myself with Go to understand high-performance system architecture."
+                title: "Backend",
+                desc: "I've built APIs with Express.js, Hono, and Laravel, but these days I'm most excited about Go and Fiber. I like working close to the metal: writing efficient queries, structuring clean architectures, and deploying with Docker."
             },
             {
-                title: "Problem Solving Roots",
-                desc: "Derived from my background in C++ and Python for Competitive Programming, I bridge the gap between algorithmic logic and web development. I focus on applying an analytical mindset to mastering new runtimes, databases, and deployment workflows."
+                title: "Foundations",
+                desc: "My programming roots are in C++ and Python through Competitive Programming. That background gave me a strong sense for algorithms and problem-solving, which I carry into every project I build."
             }
         ],
         description: [
-            "I started my programming journey in 2021 with C++ and Python for Competitive Programming. Being self-taught, I've always been curious about how things work—from Discord bots to full-scale websites—which eventually led me to focus on web development.",
-            "After building foundations with React, I moved to Next.js to explore more optimized and server-side solutions. Now, I'm further challenging myself by learning Go (Golang) to build efficient, structured backend systems. I love the process of learning every day and the satisfaction of turning code into a functional tool in the browser."
+            "I got into programming back in 2021, starting with C++ and Python for Competitive Programming. Being self-taught, I've always been the type to learn by building—Discord bots, personal tools, full websites—anything that scratches the itch of curiosity.",
+            "Over time, I shifted my focus toward web development. I went from React to Next.js on the frontend, explored multiple backend stacks including Laravel and Express.js, and I'm currently deepening my skills with Go for high-performance services. I genuinely enjoy the process of shipping something real and watching it work in production."
         ]
     },
 
@@ -95,9 +96,8 @@ const appConfig = {
                 display: "badge-primary",
                 items: [
                     {
-                        icon: "vercel-icon",
-                        title: "Vercel",
-                        desc: "Automated deployments via Git integration for frontend apps."
+                        icon: "fab fa-git text-yellow-400",
+                        title: "Git & Github"
                     },
                     {
                         icon: "fab fa-docker",
@@ -105,13 +105,14 @@ const appConfig = {
                         desc: "Comfortable with containerization basics: writing Dockerfiles, managing containers, and using Docker Compose for local development."
                     },
                     {
+                        icon: "vercel-icon",
+                        title: "Vercel",
+                        desc: "Automated deployments via Git integration for frontend apps."
+                    },
+                    {
                         icon: "fas fa-c",
                         title: "Coolify",
                         desc: "Hands-on experience deploying full-stack apps on VPS with automatic SSL and CI/CD pipelines."
-                    },
-                    {
-                        icon: "fab fa-git text-yellow-400",
-                        title: "Git & Github"
                     }
                 ]
             },
@@ -120,20 +121,20 @@ const appConfig = {
                 display: "badge-secondary",
                 items: [
                     {
-                        icon: "pnpm-icon w-6 h-6",
-                        title: "pnpm"
+                        icon: "fab fa-node",
+                        title: "Node.js"
                     },
                     {
-                        icon: "shadcn-icon",
-                        title: "Shadcn/ui"
+                        icon: "pnpm-icon w-6 h-6",
+                        title: "pnpm"
                     },
                     {
                         icon: "drizzle-icon",
                         title: "Drizzle"
                     },
                     {
-                        icon: "fab fa-node",
-                        title: "Node.js"
+                        icon: "shadcn-icon",
+                        title: "Shadcn/ui"
                     }
                 ]
             },
@@ -142,20 +143,32 @@ const appConfig = {
                 display: "badge-secondary",
                 items: [
                     {
-                        icon: "express-icon bg-yellow-400",
-                        title: "Express.js"
+                        icon: "fab fa-php text-indigo-500",
+                        title: "PHP"
                     },
                     {
-                        icon: "hono-icon w-6 h-6 inline-block bg-no-repeat bg-center",
-                        title: "Hono"
+                        icon: "fab fa-laravel text-red-500",
+                        title: "Laravel"
                     },
                     {
-                        icon: "cpp-icon text-py-blue w-8 h-8",
-                        title: "C/C++"
+                        icon: "fab fa-js text-yellow-400",
+                        title: "JavaScript"
                     },
                     {
                         icon: "fab fa-python text-py-blue",
                         title: "Python"
+                    },
+                    {
+                        icon: "mysql-icon inline-block bg-white bg-no-repeat bg-center",
+                        title: "MySQL"
+                    },
+                    {
+                        icon: "express-icon bg-yellow-400",
+                        title: "Express.js"
+                    },
+                    {
+                        icon: "mongodb-icon w-6 h-6 inline-block bg-no-repeat bg-center",
+                        title: "MongoDB"
                     },
                     {
                         icon: "fab fa-html5 text-orange-600",
@@ -166,16 +179,12 @@ const appConfig = {
                         title: "CSS3"
                     },
                     {
-                        icon: "fab fa-js text-yellow-400",
-                        title: "JavaScript"
+                        icon: "cpp-icon text-py-blue w-8 h-8",
+                        title: "C/C++"
                     },
                     {
-                        icon: "mongodb-icon w-6 h-6 inline-block bg-no-repeat bg-center",
-                        title: "MongoDB"
-                    },
-                    {
-                        icon: "mysql-icon inline-block bg-white bg-no-repeat bg-center",
-                        title: "MySQL"
+                        icon: "hono-icon w-6 h-6 inline-block bg-no-repeat bg-center",
+                        title: "Hono"
                     }
                 ]
             },
@@ -183,6 +192,14 @@ const appConfig = {
                 title: "Soft Skills",
                 display: "badge-secondary",
                 items: [
+                    {
+                        icon: "fas fa-crown pt-[6px] w-8 h-8 text-yellow-500",
+                        title: "Leadership"
+                    },
+                    {
+                        icon: "fas fa-comments pt-[6px] w-8 h-8",
+                        title: "Communication"
+                    },
                     {
                         icon: "fas fa-people-group pt-[6px] w-8 h-8",
                         title: "Teamwork"
@@ -198,10 +215,6 @@ const appConfig = {
                     {
                         icon: "fas fa-handshake pt-[6px] w-8 h-8",
                         title: "Responsibility"
-                    },
-                    {
-                        icon: "fas fa-comments pt-[6px] w-8 h-8",
-                        title: "Communication"
                     }
                 ]
             },

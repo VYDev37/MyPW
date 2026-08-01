@@ -39,6 +39,14 @@ export default function HomePage() {
                         >
                             About me
                         </Link>
+                        {appConfig.blogUrl && (<Link
+                            href={appConfig.blogUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-2 bg-transparent border border-indigo-500 text-indigo-400 px-8 py-3 rounded-full font-medium transition-all duration-300 hover:border-indigo-400 hover:text-indigo-300 hover:bg-indigo-500/10"
+                        >
+                            <i className="fas fa-blog"></i> My Blog
+                        </Link>)}
                     </div>
                 </div>
             </AnimateIn>
